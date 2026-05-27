@@ -5,12 +5,12 @@ import Divider from './Divider';
 
 export default function Portfolio() {
   const images = [
-    "/newpics/apexmandmboatontrailer.jpg", // New Boat
-    "/newpics/apexmandmproductshowcase.jpg", // New Showcase
-    "/newpics/apexmandmbusinessexterior.jpg", // New Exterior
-    "/apexmandmboatpic4.jpg", // Boat gelcoat
-    "/apexmandmcarpic3.jpg", // Powersports/bike
-    "/apexmandmcarpic4.jpg", // Interior detail
+    "/newpics/apexmandmproductshowcase.jpg",
+    "/apexmandmcarpic6.jpg",
+    "/newpics/apexmandmbusinessexterior.jpg",
+    "/apexheropic2.jpg",
+    "/apexmandmboatpic4.jpg",
+    "/newpics/apexmandmboatontrailer.jpg",
   ];
 
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
