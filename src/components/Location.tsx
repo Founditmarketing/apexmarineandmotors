@@ -21,7 +21,7 @@ export default function Location() {
         
         {/* Image side - Full height on desktop */}
         <div 
-          className="w-full lg:w-[55%] relative min-h-[400px] md:min-h-[500px] lg:min-h-0 overflow-hidden lg:[clip-path:polygon(0_0,100%_0,90%_100%,0%_100%)]" 
+          className="w-full lg:w-[55%] relative min-h-[300px] md:min-h-[400px] lg:min-h-0 overflow-hidden lg:[clip-path:polygon(0_0,100%_0,90%_100%,0%_100%)]" 
         >
           <img 
             src="/newpics/apexmandmofficeexterior2.jpg" 

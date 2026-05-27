@@ -65,7 +65,7 @@ export default function About() {
 
       {/* Image Side */}
       <div 
-        className="w-full lg:w-1/2 relative min-h-[500px] lg:min-h-auto overflow-hidden z-10 lg:[clip-path:polygon(10%_0,100%_0,100%_100%,0%_100%)]"
+        className="w-full lg:w-1/2 relative min-h-[300px] lg:min-h-auto overflow-hidden z-10 lg:[clip-path:polygon(10%_0,100%_0,100%_100%,0%_100%)]"
       >
         <img 
           src="/newpics/apexmandmserviceillustration.webp" 
