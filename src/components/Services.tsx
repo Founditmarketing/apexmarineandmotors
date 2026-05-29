@@ -77,20 +77,6 @@ export default function Services() {
       ],
       image: "/apexmandmboatpic2.jpg",
       align: "left"
-    },
-    {
-      id: "inventory",
-      path: "/inventory",
-      subtitle: "ELITE SELECTION",
-      title: "CURATED INVENTORY SHOWCASE",
-      badge: "BOATS, CARS, AND POWERSPORTS",
-      description: "Browse our high-end inventory of meticulously inspected performance vehicles, luxury watercraft, and rugged powersports.",
-      bullets: [
-        "Vetted Quality – Every listing strictly inspected.",
-        "Concierge Sourcing – We find what you desire."
-      ],
-      image: "/apexmandmcarpic5.jpg",
-      align: "right"
     }
   ];
 
@@ -117,7 +103,7 @@ export default function Services() {
           </div>
           <Divider className="justify-center mb-8 relative z-10" />
           <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-lg leading-relaxed relative z-10">
-            We offer expert services to protect and enhance your lifestyle, including structural marine repair, ceramic coatings, professional detailing, and a premium curated inventory. Safeguard your investment while improving its performance and long-term durability.
+            We offer expert services to protect and enhance your lifestyle, including structural marine repair, ceramic coatings, and professional detailing. Safeguard your investment while improving its performance and long-term durability.
           </p>
         </div>
       </div>

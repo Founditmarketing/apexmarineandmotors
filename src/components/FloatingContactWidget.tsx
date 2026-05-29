@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { MessagesSquare, X, Phone, MapPin } from 'lucide-react';
 
 export default function FloatingContactWidget({ isLoaded = true }: { isLoaded?: boolean }) {

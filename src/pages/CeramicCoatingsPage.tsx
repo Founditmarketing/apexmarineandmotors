@@ -152,7 +152,7 @@ export default function CeramicCoatingsPage() {
             Ready to experience <span className="text-primary">Perfection?</span>
           </h2>
           <p className="text-gray-300 text-lg md:text-xl font-light mb-10 max-w-2xl mx-auto">
-            Contact us today to schedule your consultation or to inquire about our current inventory.
+            Contact us today to schedule your consultation.
           </p>
           <Link to="/contact" className="inline-block bg-primary hover:bg-primary-hover text-white px-12 py-4 rounded-none btn-swipe font-bold tracking-widest uppercase transition-all shadow-[0_0_20px_rgba(255,102,0,0.3)] hover:shadow-[0_0_30px_rgba(255,102,0,0.5)]">
             GET IN TOUCH

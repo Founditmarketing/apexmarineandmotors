@@ -44,15 +44,12 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Inventory */}
+            {/* Sales & Consignment */}
             <div>
-               <h4 className="text-primary font-bold font-serif uppercase tracking-wide mb-6">Sales & Inventory</h4>
+               <h4 className="text-primary font-bold font-serif uppercase tracking-wide mb-6">Sales & Consignment</h4>
                <ul className="space-y-4">
                   {[
-                    { name: 'Boats Inventory', path: '/inventory?category=boats' },
-                    { name: 'Vehicles Inventory', path: '/inventory?category=vehicles' },
-                    { name: 'Powersports', path: '/inventory?category=powersports' },
-                    { name: 'Consignment', path: '/consignment-sales' },
+                    { name: 'Consignment Sales', path: '/consignment-sales' },
                     { name: 'Purchase Inquiry', path: '/contact' }
                   ].map((link, i) => (
                     <li key={i} className="flex items-center gap-2">

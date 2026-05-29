@@ -8,7 +8,6 @@ import Home from './pages/Home';
 import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
 import GalleryPage from './pages/GalleryPage';
-import InventoryPage from './pages/InventoryPage';
 import ConsignmentSalesPage from './pages/ConsignmentSalesPage';
 import CeramicCoatingsPage from './pages/CeramicCoatingsPage';
 import PaintProtectionFilmPage from './pages/PaintProtectionFilmPage';
@@ -62,7 +61,6 @@ export default function App() {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home isLoaded={isLoaded} />} />
-            <Route path="/inventory" element={<InventoryPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/contact" element={<ContactPage />} />

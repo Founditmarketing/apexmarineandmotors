@@ -113,7 +113,6 @@ export default function Contact() {
                     <option value="Detailing" className="bg-dark-bg">Detailing</option>
                     <option value="Fiberglass Repair" className="bg-dark-bg">Fiberglass & Gelcoat Repair</option>
                     <option value="Marine Flooring" className="bg-dark-bg">Marine Flooring</option>
-                    <option value="Inventory Inquiry" className="bg-dark-bg">Inventory Inquiry</option>
                     <option value="Other" className="bg-dark-bg">Other</option>
                   </select>
                   <div className="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-primary">

@@ -5,7 +5,6 @@ import ParallaxBackground from './ParallaxBackground';
 
 export default function Header({ isLoaded = true }: { isLoaded?: boolean }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [isInventoryOpen, setIsInventoryOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isAboutOpen, setIsAboutOpen] = useState(false);
 
@@ -58,22 +57,7 @@ export default function Header({ isLoaded = true }: { isLoaded?: boolean }) {
 
             <div className="h-4 w-px bg-white/10"></div>
             
-            {/* Inventory Dropdown */}
-            <div className="relative group py-6 -my-6">
-              <button className="text-xs font-semibold hover:text-primary transition-colors text-gray-300 tracking-wider flex items-center gap-1 cursor-default">
-                INVENTORY
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-              </button>
-              {/* Dropdown Menu */}
-              <div className="absolute top-full left-0 mt-0 w-64 bg-black/95 backdrop-blur-md border border-white/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 flex flex-col z-[60] shadow-2xl">
-                <Link to="/inventory?category=all" className="px-4 py-3 text-xs font-semibold hover:bg-primary/20 hover:text-primary text-gray-300 transition-colors border-b border-white/5">ALL</Link>
-                <Link to="/inventory?category=boats" className="px-4 py-3 text-xs font-semibold hover:bg-primary/20 hover:text-primary text-gray-300 transition-colors border-b border-white/5">BOATS</Link>
-                <Link to="/inventory?category=vehicles" className="px-4 py-3 text-xs font-semibold hover:bg-primary/20 hover:text-primary text-gray-300 transition-colors border-b border-white/5">VEHICLES</Link>
-                <Link to="/inventory?category=powersports" className="px-4 py-3 text-xs font-semibold hover:bg-primary/20 hover:text-primary text-gray-300 transition-colors">POWERSPORTS</Link>
-              </div>
-            </div>
 
-            <div className="h-4 w-px bg-white/10"></div>
 
             {/* Services Dropdown */}
             <div className="relative group py-6 -my-6">
@@ -216,26 +200,7 @@ export default function Header({ isLoaded = true }: { isLoaded?: boolean }) {
                   </div>
                 </div>
               </div>
-              
-              <div className="py-5 flex flex-col">
-                <button 
-                  onClick={() => setIsInventoryOpen(!isInventoryOpen)}
-                  className="flex justify-between items-center w-full text-left"
-                >
-                  <span className="text-2xl font-bold text-white font-serif uppercase tracking-wider inline-block">
-                    INVENTORY
-                  </span>
-                  <ChevronDown className={`text-white transition-transform duration-300 ${isInventoryOpen ? 'rotate-180' : ''}`} />
-                </button>
-                <div className={`flex flex-col pl-6 border-l border-white/10 ml-2 overflow-hidden transition-all duration-300 ${isInventoryOpen ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0 mt-0'}`}>
-                  <div className="flex flex-col space-y-3">
-                    <Link to="/inventory?category=all" onClick={() => setIsOpen(false)} className="text-lg font-bold text-gray-400 hover:text-primary font-serif uppercase tracking-wider transition-colors w-full">ALL</Link>
-                    <Link to="/inventory?category=boats" onClick={() => setIsOpen(false)} className="text-lg font-bold text-gray-400 hover:text-primary font-serif uppercase tracking-wider transition-colors w-full">BOATS</Link>
-                    <Link to="/inventory?category=vehicles" onClick={() => setIsOpen(false)} className="text-lg font-bold text-gray-400 hover:text-primary font-serif uppercase tracking-wider transition-colors w-full">VEHICLES</Link>
-                    <Link to="/inventory?category=powersports" onClick={() => setIsOpen(false)} className="text-lg font-bold text-gray-400 hover:text-primary font-serif uppercase tracking-wider transition-colors w-full">POWERSPORTS</Link>
-                  </div>
-                </div>
-              </div>
+
 
               <div className="py-5 flex flex-col">
                 <button 
